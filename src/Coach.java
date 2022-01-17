@@ -1,8 +1,8 @@
-class coach extends person {
+class Coach extends Person {
 
     protected double experience;
 
-    public coach() {
+    public Coach() {
         setExperience();
     }
 

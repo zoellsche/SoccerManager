@@ -4,7 +4,7 @@ public class APP {
 
         System.out.println("Start");
 
-        coach c = new coach();
+        Coach c = new Coach();
         c.setName("Peter");
         c.setExperience();
 
