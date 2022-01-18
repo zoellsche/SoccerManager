@@ -2,20 +2,17 @@ public class APP {
 
     public static void main(String[] args) {
 
-        System.out.println("Start");
+        Team team1 = new Team("Jürgenshagen");
+        Player robert = new Player("Robert");
+        Player marco = new Player("Marco");
+        Team team2 = new Team("Satow");
+        team1.addPlayer(robert);
+        team2.addPlayer(marco);
 
-        Coach c = new Coach();
-        c.setName("Peter");
-        c.setExperience();
-
-        System.out.println(c.getExperience());
-
-        System.out.println(c.getName());
-
-        System.out.println(c.getExperience());
-
-        System.out.println("Ende");
-
+       FriendlySoccerGame game = new FriendlySoccerGame(team1, team2);
+       int[] results = game.gameStart();
+       System.out.println(results[0]);
+       System.out.println(results[1]);
 
     }
 }
